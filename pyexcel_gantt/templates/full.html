@@ -1,0 +1,27 @@
+<html><head>
+	<style>
+		body {
+			font-family: sans-serif;
+			background: #ccc;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+		.gantt-container {
+			overflow: scroll;
+		}
+		/* custom class */
+		.gantt .bar-milestone .bar-progress {
+			fill: tomato;
+		}
+	</style>
+	<!-- build -->
+	<script src="js/moment-2.18.1.min.js"></script>
+	<script src="js/snap.svg-0.5.1.min.js"></script>
+	<script src="js/frappe-gantt-0.0.6.min.js"></script>
+	<!-- endbuild -->
+  </head><body>
+	{% include "embed.html" %}
+  </body>
+</html>

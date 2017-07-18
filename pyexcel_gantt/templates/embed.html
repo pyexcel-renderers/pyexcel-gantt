@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <div class="gantt-container">
+	<svg id="gantt" width="{{width}}" height="{{height}}"></svg>
+  </div>
+</div>
+<script type="text/javascript">
+var tasks = {{tasks}}
+var gantt = new Gantt("#gantt", tasks);
+</script>
