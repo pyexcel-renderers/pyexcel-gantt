@@ -1,3 +1,2 @@
 include README.rst
 include CHANGELOG.rst
-recursive-include pyexcel_gantt/templates *.html *.js

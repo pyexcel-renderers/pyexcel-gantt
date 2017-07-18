@@ -35,7 +35,28 @@ a little bit more time in coding, documentation and writing interesting posts.
 
 Introduction
 ================================================================================
-**pyexcel-gantt** does xyz.
+**pyexcel-gantt** does Draw gantt chart using frappe-gantt module for pyexcel data.
+
+Here is a sample csv file::
+
+    id,name,start,end,progress,dependencies,custom_class
+    Task 1,Writing pyexcel-gantt,2017-07-17,2017-07-18,80,,
+    Task 2,Test pyexcel-gantt,2017-07-19,2017-07-20,10,Task 1,,
+    Task 3,Write up the documentation,2017-07-21,2017-07-22,0,Task 1,,
+    Task 4,Release pyexcel-gantt,2017-07-23,2017-07-23,0,"Task 2, Task 3",,bar-milestone
+
+.. image:: demo/demo.png
+
+Here's what you need to do in your program:
+
+.. code-block:: python
+
+    import pyexcel as p
+    
+    
+    p.save_as(file_name='tasks.csv',
+              dest_file_name='demo.gantt.html',)
+
 
 
 

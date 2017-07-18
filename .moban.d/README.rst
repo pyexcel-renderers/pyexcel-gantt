@@ -4,5 +4,5 @@
 {%endblock%}
 
 {%block features %}
-**{{name}}** does xyz.
+{%include "gantt.rst"%}
 {%endblock%}

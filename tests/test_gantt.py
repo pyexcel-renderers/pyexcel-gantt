@@ -1,15 +1,25 @@
-from pyexcel_gantt.gantt import freeze_js
+import os
+import pyexcel as p
+from pyexcel_gantt.gantt import Chart
 
 
-def test_freeze_js():
-    html_content = """
-        </style>
-        <!-- build -->
-        <script src="js/moment-2.18.1.min.js"></script>
-        <script src="js/snap.svg-0.5.1.min.js"></script>
-        <script src="js/frappe-gantt-0.0.6.min.js"></script>
-        <!-- endbuild -->
-    </head><body>"""
+def test_full_html():
+    chart = Chart('html')
+    content = chart.get_io()
+    chart.set_output_stream(content)
+    sheet = p.get_sheet(file_name=os.path.join('demo', 'tasks.csv'))
+    chart.render_sheet(sheet)
+    assert "Task 2, Task 3" in content.getvalue()
 
-    html_content = freeze_js(html_content)
-    print(html_content)
+
+def test_embed_html():
+    chart = Chart('html')
+    content = chart.get_io()
+    chart.set_output_stream(content)
+    sheet = p.get_sheet(file_name=os.path.join('demo', 'tasks.csv'))
+    chart.render_sheet(sheet, embed=True)
+    html_content = content.getvalue()
+    assert "Task 2, Task 3" in html_content
+    assert 'Snap.svg 0.5.0' not in html_content
+    assert 'version : 2.18.1' not in html_content
+    assert 'exports.Gantt' not in html_content
