@@ -22,4 +22,4 @@ def test_freeze_js():
 def test_dumps():
     data = [date(2017, 7, 19), datetime(2017, 7, 19, 7, 22, 0)]
     json = dumps(data)
-    eq_(json, ["2017-07-19", "2017-07-19"])
+    eq_(json, '["2017-07-19", "2017-07-19"]')

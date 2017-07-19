@@ -8,11 +8,12 @@ Here is `a sample csv`_ file::
     Task 3,Write up the documentation,2017-07-21,2017-07-22,0,Task 1,,
     Task 4,Release pyexcel-gantt,2017-07-23,2017-07-23,0,"Task 2, Task 3",,bar-milestone
 
-.. image:: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/demo.png
 
 What you can do is to view it with pyexcel's `command line interface`_:
 
     pyexcel view --in-browser --output-file-type gantt.html demo/tasks.csv
+
+.. image:: https://github.com/pyexcel/pyexcel-gantt/raw/master/pyexcel-gantt.gif
 
 
 Programmatically, you can do the following:
