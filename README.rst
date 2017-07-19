@@ -8,8 +8,8 @@ pyexcel-gantt - Let you focus on presentation with gantt
 .. image:: https://api.travis-ci.org/pyexcel/pyexcel-gantt.svg?branch=master
    :target: http://travis-ci.org/pyexcel/pyexcel-gantt
 
-.. image:: https://codecov.io/github/pyexcel/pyexcel-gantt/coverage.png
-   :target: https://codecov.io/github/pyexcel/pyexcel-gantt
+.. image:: https://codecov.io/gh/pyexcel/pyexcel-gantt/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/pyexcel/pyexcel-gantt
 
 .. image:: https://img.shields.io/gitter/room/gitterHQ/gitter.svg
    :target: https://gitter.im/pyexcel/Lobby
