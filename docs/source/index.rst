@@ -13,7 +13,7 @@ Introduction
 
 **pyexcel-gantt** does Draw gantt chart using frappe-gantt module for pyexcel data.
 
-Here is a sample csv file::
+Here is `a sample csv`_ file::
 
     id,name,start,end,progress,dependencies,custom_class
     Task 1,Writing pyexcel-gantt,2017-07-17,2017-07-18,80,,
@@ -21,7 +21,7 @@ Here is a sample csv file::
     Task 3,Write up the documentation,2017-07-21,2017-07-22,0,Task 1,,
     Task 4,Release pyexcel-gantt,2017-07-23,2017-07-23,0,"Task 2, Task 3",,bar-milestone
 
-.. image:: demo/demo.png
+.. image:: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/demo.png
 
 Here's what you need to do in your program:
 
@@ -31,8 +31,16 @@ Here's what you need to do in your program:
     
     
     p.save_as(file_name='tasks.csv',
-              dest_file_name='demo.gantt.html',)
+              dest_file_name='tasks.gantt.html')
 
+Alternatively, you can do it with pyexcel's command line interface:
+
+.. code-block:: bash
+
+   $ pyexcel transcode tasks.csv tasks.gantt.html 
+
+
+.. _a sample csv: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/tasks.csv
 
 Known constraints
 ==================
@@ -78,7 +86,7 @@ Please copy the hightlighted lines into the head section of each of your web pag
 
 .. code-block:: html
    :linenos:
-   :emphasize-lines: 2-19
+   :emphasize-lines: 2-21
 
    <html><head>
     <style>
