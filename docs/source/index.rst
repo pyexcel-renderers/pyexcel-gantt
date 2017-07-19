@@ -23,7 +23,12 @@ Here is `a sample csv`_ file::
 
 .. image:: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/demo.png
 
-Here's what you need to do in your program:
+What you can do is to view it with pyexcel's `command line interface`_:
+
+    pyexcel view --in-browser --output-file-type gantt.html demo/tasks.csv
+
+
+Programmatically, you can do the following:
 
 .. code-block:: python
 
@@ -33,7 +38,8 @@ Here's what you need to do in your program:
     p.save_as(file_name='tasks.csv',
               dest_file_name='tasks.gantt.html')
 
-Alternatively, you can do it with pyexcel's `command line interface`_:
+
+Alternatively, you can save the file as:
 
 .. code-block:: bash
 

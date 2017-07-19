@@ -4,5 +4,6 @@ nick_name: "gantt"
 version: "0.0.1"
 current_version: "0.0.1"
 release: "0.0.1"
-dependencies: []
+dependencies:
+  - jinja2
 description: "Draw gantt chart using frappe-gantt module for pyexcel data"
