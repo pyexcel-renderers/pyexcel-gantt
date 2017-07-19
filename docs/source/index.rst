@@ -11,7 +11,7 @@
 Introduction
 --------------------------------------------------------------------------------
 
-**pyexcel-gantt** does Draw gantt chart using frappe-gantt module for pyexcel data.
+**pyexcel-gantt** draws gantt chart using frappe-gantt.js for pyexcel data. Credit goes to `frappe's gantt chart`_
 
 Here is `a sample csv`_ file::
 
@@ -49,6 +49,7 @@ Alternatively, you can save the file as:
 
 .. _a sample csv: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/tasks.csv
 .. _command line interface: https://github.com/pyexcel/pyexcel-cli
+.. _frappe's gantt chart: https://github.com/frappe/gantt
 
 Known constraints
 ==================

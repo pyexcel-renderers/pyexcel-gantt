@@ -6,4 +6,4 @@ current_version: "0.0.1"
 release: "0.0.1"
 dependencies:
   - jinja2
-description: "Draw gantt chart using frappe-gantt module for pyexcel data"
+description: "draws gantt chart using frappe-gantt.js for pyexcel data"

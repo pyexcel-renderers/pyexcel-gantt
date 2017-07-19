@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 DESCRIPTION = (
-    'Draw gantt chart using frappe-gantt module for pyexcel data' +
+    'draws gantt chart using frappe-gantt.js for pyexcel data' +
     ''
 )
 extensions = [
