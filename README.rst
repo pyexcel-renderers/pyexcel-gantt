@@ -57,7 +57,7 @@ Here's what you need to do in your program:
     p.save_as(file_name='tasks.csv',
               dest_file_name='tasks.gantt.html')
 
-Alternatively, you can do it with pyexcel's command line interface:
+Alternatively, you can do it with pyexcel's `command line interface`_:
 
 .. code-block:: bash
 
@@ -65,6 +65,7 @@ Alternatively, you can do it with pyexcel's command line interface:
 
 
 .. _a sample csv: https://github.com/pyexcel/pyexcel-gantt/raw/master/demo/tasks.csv
+.. _command line interface: https://github.com/pyexcel/pyexcel-cli
 
 
 
